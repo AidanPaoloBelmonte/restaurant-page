@@ -1,18 +1,29 @@
 // Base Class for generating pages
 export class Page {
-  static content = document.querySelector("#content");
-  static errorDisplay = document.createElement("div");
+  static #content = document.querySelector("#content");
 
   constructor() {
     return;
   }
 
-  generate = () => {
+  static clear = () => {
     while (content.lastChild) {
       content.removeChild(content.lastChild);
     }
+  };
 
-    errorDisplay.textContent = "We apologize for the inconvenience.";
+  generate = () => {
+    Page.clear();
+
+    const errorDisplay = document.createElement("div");
+    const errorMsg = document.createElement("p");
+
+    errorDisplay.id = "error";
+    errorMsg.textContent =
+      "An error has occured. \r\n We apologize for the inconvenience.";
+
+    errorDisplay.appendChild(errorMsg);
+    content.appendChild(errorDisplay);
 
     return;
   };

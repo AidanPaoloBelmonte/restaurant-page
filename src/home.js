@@ -2,6 +2,8 @@ import { Page } from "./page.js";
 
 export class HomePage extends Page {
   generate = () => {
+    Page.clear();
+
     const welcome = document.createElement("div");
     const header = document.createElement("h1");
     const image = document.createElement("img");
