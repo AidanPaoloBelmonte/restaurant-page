@@ -45,8 +45,11 @@ nav button:active {
     padding-bottom: 10px;
 }
 
-.activeTab {
-    border-bottom: 3px solid forestgreen;
+.active-tab {
+    box-sizing: content-box;
+    border-bottom: 5px solid forestgreen;
+
+    transition: 50ms;
 }
 
 /* Content */
@@ -77,6 +80,37 @@ h1 {
     text-align: center;
 
     white-space: pre;
+}
+
+#menu {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menu > h1 {
+    margin: 12px;
+
+    font-size: 3rem;
+}
+
+#menu-container {
+    width: 80vw;
+    border: 3px solid seagreen;
+    border-radius: 24px;
+    margin: 30px;
+
+    flex: 1 min(500px, 80vh);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu-items {
+    flex: 1 auto;
 }
 
 /* Error */
