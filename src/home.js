@@ -17,7 +17,7 @@ export class HomePage extends Page {
     header.textContent = "Plate Leaf";
     greetings.textContent = "Feel just like at Home";
     desc.textContent =
-      "Everything you see, the Sun touches, and what you see will be a mirror of something nostalgic, familiar. \r\n \r\n";
+      "Everything you see, the Sun touches, and what it touches is a mirror of something nostalgic, familiar. \r\n \r\n";
     desc.textContent +=
       "Vivid Greens, Tender Browns, Charcoal Blacks and Clear Whites - all that is offered here is pure unbridled bliss of cuisine.";
 

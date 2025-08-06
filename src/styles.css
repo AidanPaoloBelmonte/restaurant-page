@@ -83,10 +83,12 @@ h1 {
 }
 
 #greeter > h2 {
+    color: darkgray;
     font-size: 2rem;
 }
 
 #greeter > p {
+    color: dimgray;
     text-align: center;
 
     white-space: pre;
