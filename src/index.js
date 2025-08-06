@@ -2,6 +2,7 @@ import "./styles.css";
 
 import { HomePage } from "./home.js";
 import { MenuPage } from "./menu.js";
+import { AboutPage } from "./about.js";
 
 const nav = document.querySelector("nav");
 
@@ -21,6 +22,8 @@ nav.addEventListener("click", (e) => {
     page = new HomePage();
   } else if (target.id === "menuTab") {
     page = new MenuPage();
+  } else if (target.id === "aboutTab") {
+    page = new AboutPage();
   } else {
     return;
   }
